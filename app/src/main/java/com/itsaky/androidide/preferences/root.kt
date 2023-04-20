@@ -77,7 +77,7 @@ val needHelp =
     val builder = newMaterialDialogBuilder(it.context)
     builder.setTitle(string.need_help)
     builder.setMessage(string.msg_need_help)
-    builder.setPositiveButton(string.ok, null)
+    builder.setPositiveButton(com.itsaky.androidide.R.string.ok, null)
     builder.create().show()
     true
   }
