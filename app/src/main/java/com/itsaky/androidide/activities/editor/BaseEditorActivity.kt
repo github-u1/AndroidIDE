@@ -278,18 +278,18 @@ abstract class BaseEditorActivity :
 
   override fun onNavigationItemSelected(item: MenuItem): Boolean {
     when (item.itemId) {
-      id.editornav_discuss -> app.openTelegramGroup()
-      id.editornav_channel -> app.openTelegramChannel()
-      id.editornav_suggest -> app.openGitHub()
-      id.editornav_needHelp -> showNeedHelpDialog()
+      // id.editornav_discuss -> app.openTelegramGroup()
+      // id.editornav_channel -> app.openTelegramChannel()
+      // id.editornav_suggest -> app.openGitHub()
+      // id.editornav_needHelp -> showNeedHelpDialog()
       id.editornav_settings -> startActivity(Intent(this, PreferencesActivity::class.java))
-      id.editornav_share ->
-        startActivity(IntentUtils.getShareTextIntent(getString(string.msg_share_app)))
+      // id.editornav_share ->
+        // startActivity(IntentUtils.getShareTextIntent(getString(string.msg_share_app)))
       id.editornav_close_project -> doConfirmProjectClose()
       id.editornav_terminal -> openTerminal()
     }
 
-    binding.root.closeDrawer(GravityCompat.START)
+    binding.root.closeDrawer(GravityCompat.END)
     return false
   }
 
@@ -643,6 +643,7 @@ abstract class BaseEditorActivity :
     }
   }
 
+/*
   private fun showNeedHelpDialog() {
     val builder = newMaterialDialogBuilder(this)
     builder.setTitle(string.need_help)
@@ -650,6 +651,7 @@ abstract class BaseEditorActivity :
     builder.setPositiveButton(string.ok, null)
     builder.create().show()
   }
+*/
 
   open fun installationSessionCallback(): SessionCallback {
     return ApkInstallationSessionCallback(this).also { installationCallback = it }

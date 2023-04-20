@@ -14,6 +14,7 @@
             android:title="@string/title_close_project" />
     </group>
 
+    <!--
     <group
         android:id="@+id/editornav_group_discuss"
         android:title="@string/discuss_amp_help">
@@ -34,6 +35,7 @@
             android:icon="@drawable/ic_help"
             android:title="@string/need_help" />
     </group>
+    -->
 
     <group
         android:id="@+id/editornav_group_other"
@@ -42,10 +44,12 @@
             android:id="@+id/editornav_settings"
             android:icon="@drawable/ic_settings"
             android:title="@string/ide_preferences" />
+        <!--
         <item
             android:id="@+id/editornav_share"
             android:icon="@drawable/ic_share"
             android:title="@string/share_with_friends" />
+        -->
     </group>
 
 </menu>

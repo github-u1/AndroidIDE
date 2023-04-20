@@ -23,12 +23,13 @@ import com.itsaky.androidide.resources.R.string
 import com.itsaky.androidide.app.BaseApplication
 import com.itsaky.androidide.app.IDEApplication
 import kotlinx.parcelize.Parcelize
+import com.itsaky.androidide.utils.DialogUtils.newMaterialDialogBuilder
 
 private const val KEY_GITHUB = "idepref_gh"
 private const val KEY_TG_CHANNEL = "idepref_tg_channel"
 private const val KEY_TG_GROUP = "idepref_tg_group"
 private const val KEY_CHANGELOG = "idepref_changelog"
-private const var KEY_NEEDHELP = "idepref_needhelp"
+private const val KEY_NEEDHELP = "idepref_needhelp"
 private const val KEY_ABOUT = "idepref_about"
 
 val github =
@@ -73,7 +74,7 @@ val needHelp =
     title = string.need_help,
     summary = string.idepref_needhelp_summary
   ) {
-    val builder = new MaterialDialogBuilder(it.context)
+    val builder = newMaterialDialogBuilder(it.context)
     builder.setTitle(string.need_help)
     builder.setMessage(string.msg_need_help)
     builder.setPositiveButton(string.ok, null)
