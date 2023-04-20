@@ -61,7 +61,7 @@ public class AboutActivity extends IDEActivity {
     items.licenses.setOnClickListener(
         v -> startActivity(new Intent(this, OssLicensesMenuActivity.class)));
     items.share.setOnClickListener(
-        v -> startActivity(IntentUtils.getShareTextIntent(getString(string.msg_share_app))));
+        v -> startActivity(IntentUtils.getShareTextIntent(getString(R.string.msg_share_app))));
   }
 
   @Override
