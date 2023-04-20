@@ -28,6 +28,7 @@ import com.itsaky.androidide.R;
 import com.itsaky.androidide.app.IDEActivity;
 import com.itsaky.androidide.databinding.ActivityAboutBinding;
 import com.itsaky.androidide.databinding.LayoutAboutItemsBinding;
+import com.blankj.utilcode.util.IntentUtils;
 
 import java.util.ArrayList;
 import java.util.List;
