@@ -53,12 +53,15 @@ public class AboutActivity extends IDEActivity {
     TooltipCompat.setTooltipText(items.email, getString(R.string.about_option_email));
     TooltipCompat.setTooltipText(items.website, getString(R.string.about_option_website));
     TooltipCompat.setTooltipText(items.licenses, getString(R.string.oss_license_title));
+    TooltipCompat.setTooltipText(items.share, getString(R.string.share_with_friends));
     items.github.setOnClickListener(v -> getApp().openGitHub());
     items.discuss.setOnClickListener(v -> getApp().openTelegramGroup());
     items.email.setOnClickListener(v -> getApp().emailUs());
     items.website.setOnClickListener(v -> getApp().openWebsite());
     items.licenses.setOnClickListener(
         v -> startActivity(new Intent(this, OssLicensesMenuActivity.class)));
+    items.share.setOnClickListener(
+        v -> startActivity(IntentUtils.getShareTextIntent(getString(string.msg_share_app))));
   }
 
   @Override

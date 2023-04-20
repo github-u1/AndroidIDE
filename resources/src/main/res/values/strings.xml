@@ -354,6 +354,7 @@
   <string name="idepref_channel_summary">Subscribe for latest updates.</string>
   <string name="idepref_group_summary">Discuss featues, bugs and improvements here.</string>
   <string name="idepref_changelog_summary">What\'s new in this version?</string>
+  <string name="idepref_needhelp_summary">Are you need help.</string>
   <string name="idepref_about_summary">More about AndroidIDE.</string>
   <string name="idepref_general_summary">General IDE configuration.</string>
   <string name="idepref_editor_summary">Configure the editor.</string>

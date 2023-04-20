@@ -28,6 +28,7 @@ private const val KEY_GITHUB = "idepref_gh"
 private const val KEY_TG_CHANNEL = "idepref_tg_channel"
 private const val KEY_TG_GROUP = "idepref_tg_group"
 private const val KEY_CHANGELOG = "idepref_changelog"
+private const var KEY_NEEDHELP = "idepref_needhelp"
 private const val KEY_ABOUT = "idepref_about"
 
 val github =
@@ -66,6 +67,20 @@ val changelog =
     IDEApplication.instance.showChangelog()
     true
   }
+val needHelp =
+  SimpleClickablePreference(
+    key = KEY_NEEDHELP,
+    title = string.need_help,
+    summary = string.idepref_needhelp_summary
+  ) {
+    val builder = new MaterialDialogBuilder(it.context)
+    builder.setTitle(string.need_help)
+    builder.setMessage(string.msg_need_help)
+    builder.setPositiveButton(string.ok, null)
+    builder.create().show()
+    true
+  }
+
 val about =
   SimpleClickablePreference(
     key = KEY_ABOUT,
@@ -100,6 +115,7 @@ class AboutPreferences(
     addPreference(channel)
     addPreference(group)
     addPreference(changelog)
+    addPreference(needHelp)
     addPreference(about)
   }
 }

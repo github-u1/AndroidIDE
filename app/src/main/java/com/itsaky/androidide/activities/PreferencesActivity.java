@@ -90,4 +90,5 @@ public class PreferencesActivity extends IDEActivity {
     super.onDestroy();
     binding = null;
   }
+
 }

@@ -94,6 +94,21 @@
         android:focusable="true"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/ic_licenses" />
+      
+      <ImageView
+        android:id="@+id/share"
+        app:tint="?attr/colorOnBackground"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:focusable="true"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/ic_share" />
 
     </LinearLayout>
 

@@ -474,7 +474,7 @@ abstract class BaseEditorActivity :
       )
 
     binding.editorDrawerLayout.addDrawerListener(toggle)
-    binding.startNav.setNavigationItemSelectedListener(this)
+    binding.endNav.setNavigationItemSelectedListener(this)
     toggle.syncState()
     binding.editorDrawerLayout.childId = binding.realContainer.id
   }

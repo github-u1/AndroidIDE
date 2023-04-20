@@ -326,6 +326,7 @@
   <string name="idepref_channel_summary">订阅以获取最新更新</string>
   <string name="idepref_group_summary">在这里讨论 功能、改进 和 Bug</string>
   <string name="idepref_changelog_summary">此版本有什么新内容?</string>
+  <string name="idepref_needhelp_summary">需要帮助吗？</string>
   <string name="idepref_about_summary">更多关于 AndroidIDE</string>
   <string name="idepref_general_summary">常规 IDE 配置</string>
   <string name="idepref_editor_summary">编辑器 配置</string>
