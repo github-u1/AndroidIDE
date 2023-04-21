@@ -101,7 +101,7 @@ open class EditorHandlerActivity : ProjectHandlerActivity(), IEditorHandler {
     viewModel._displayedFile.observe(this) { this.binding.editorContainer.displayedChild = it }
     viewModel._fileTreeDrawerOpened.observe(this) { opened ->
       this.binding.editorDrawerLayout.apply {
-        if (opened) openDrawer(GravityCompat.END) else closeDrawer(GravityCompat.END)
+        if (opened) openDrawer(GravityCompat.START) else closeDrawer(GravityCompat.START)
       }
     }
 
